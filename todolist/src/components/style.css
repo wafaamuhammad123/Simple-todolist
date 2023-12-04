@@ -1,0 +1,153 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .todo-container {
+    width: 400px; /* Adjust the width as needed */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add margin for spacing */
+  }
+  .todo-form {
+    display: flex;
+  }
+  
+  .input-field {
+    flex: 1;
+    padding: 8px;
+    margin-right: 8px;
+    box-sizing: border-box;
+  }
+  .add {
+background-color: white;
+    border: 1px solid #b61010 ;
+    color: #b61010;    
+    padding: 8px 22px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .add:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  h1 {
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    margin-bottom: 50px;
+    position: relative;
+   
+    overflow: hidden;
+  }
+  
+  h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  h1:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+  
+  .update-btn {
+    background-color: #d78732;;
+    color: #fff;
+
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .update-btn:hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #d78732;
+    color: #d78732;
+    
+  }
+  
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .todo-text {
+    flex: 1; /* Takes up remaining space */
+  }
+  
+  .delete-btn {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e53935;
+  }
+  
+  .btnn {
+display: flex;
+    margin-top: 15px;
+    gap: 1.2rem;
+  flex-direction: row;
+  }
+
+  .remove{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 10px;
+  }
+
+  .all-btn {
+ border: 1px solid white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #d78732;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .all-btn:hover {
+  color: #d78732;
+  background-color: white;
+    border: 1px solid #d78732;
+    transform: scale(1.05);
+  }
